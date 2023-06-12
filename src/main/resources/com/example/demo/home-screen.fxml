@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
+   <children>
+      <FlowPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="600.0" style="-fx-background-color: #006c67;">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" onMouseClicked="#onRulesButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/open-book.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="49.0" prefWidth="8.0" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="401.0" prefWidth="600.0" style="-fx-background-color: #006c67;">
+               <children>
+                  <ImageView fitHeight="142.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="welcomeText" fitHeight="57.0" fitWidth="57.0" onMouseClicked="#onPlayButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/play-button.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="39.0" prefWidth="600.0" />
+               </children>
+            </VBox>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

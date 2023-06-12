@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@setup-screen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GameSetUpController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutY="44.0" prefHeight="356.0" prefWidth="600.0" style="-fx-background-color: #006C67;" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="561.0" prefWidth="598.0" style="-fx-background-color: #006C67;">
+               <children>
+                  <HBox prefHeight="544.0" prefWidth="604.0">
+                     <children>
+                        <VBox prefHeight="544.0" prefWidth="149.0" />
+                        <VBox fx:id="setUp" prefHeight="544.0" prefWidth="288.0">
+                           <children>
+                              <Text fill="#ffb100" layoutX="10.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Set Up">
+                                 <font>
+                                    <Font name="Arial Black" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Pane prefHeight="10.0" prefWidth="288.0" />
+                              <Text fill="#ffb100" layoutX="10.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expansions">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="75.0" prefWidth="288.0">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="23.0" />
+                                    <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="277.0">
+                                       <children>
+                                          <CheckBox mnemonicParsing="false" text="Inns &amp; Cathedrales" textFill="#ffb100">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <Pane prefHeight="8.0" prefWidth="271.0" />
+                                          <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Goldmines" textFill="#ffb100">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <Pane prefHeight="9.0" prefWidth="288.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Players">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Pane prefHeight="9.0" prefWidth="288.0" />
+                              <HBox alignment="CENTER" prefHeight="2.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fx:id="backwardButton" fitHeight="25.0" fitWidth="23.0" onMouseClicked="#onBackwardButton" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/backward-arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="63.0" prefWidth="8.0" />
+                                    <Text fx:id="numPlayers" fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Pane prefHeight="63.0" prefWidth="8.0" />
+                                    <ImageView fx:id="forwardButton" fitHeight="25.0" fitWidth="23.0" onMouseClicked="#onForwardButton" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/forward-arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="13.0" prefWidth="288.0" />
+                              <HBox fx:id="playerInp1" alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@meeples/meepleyellow.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="61.0" prefWidth="13.0" />
+                                    <VBox prefHeight="65.0" prefWidth="169.0">
+                                       <children>
+                                          <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Pane prefHeight="4.0" prefWidth="169.0" />
+                                          <TextField style="-fx-background-color: #003844;">
+                                             <font>
+                                                <Font name="Arial" size="13.0" />
+                                             </font></TextField>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="playerInp2" alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@meeples/meeplered.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="61.0" prefWidth="13.0" />
+                                    <VBox prefHeight="65.0" prefWidth="169.0">
+                                       <children>
+                                          <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Pane prefHeight="4.0" prefWidth="169.0" />
+                                          <TextField style="-fx-background-color: #003844;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="playerInp3" alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@meeples/meeplepink.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="61.0" prefWidth="13.0" />
+                                    <VBox prefHeight="65.0" prefWidth="169.0">
+                                       <children>
+                                          <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Pane prefHeight="4.0" prefWidth="169.0" />
+                                          <TextField style="-fx-background-color: #003844;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="playerInp4" alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@meeples/meeplegreen.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="61.0" prefWidth="13.0" />
+                                    <VBox prefHeight="65.0" prefWidth="169.0">
+                                       <children>
+                                          <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Pane prefHeight="4.0" prefWidth="169.0" />
+                                          <TextField style="-fx-background-color: #003844;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="playerInp6" alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@meeples/meepleblue.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="61.0" prefWidth="13.0" />
+                                    <VBox prefHeight="65.0" prefWidth="169.0">
+                                       <children>
+                                          <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Pane prefHeight="4.0" prefWidth="169.0" />
+                                          <TextField style="-fx-background-color: #003844;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="playerInp5" alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="288.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@meeples/meepleblack.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="61.0" prefWidth="13.0" />
+                                    <VBox prefHeight="65.0" prefWidth="169.0">
+                                       <children>
+                                          <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Pane prefHeight="4.0" prefWidth="169.0" />
+                                          <TextField style="-fx-background-color: #003844;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #006C67;">
+         <children>
+            <Pane prefHeight="46.0" prefWidth="10.0" />
+            <ImageView fitHeight="27.0" fitWidth="29.0" onMouseClicked="#onBackButtom" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back-arrow.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="46.0" prefWidth="195.0" />
+            <ImageView fitHeight="45.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="59.0" layoutY="10.0" prefHeight="46.0" prefWidth="186.0" />
+            <ImageView fitHeight="25.0" fitWidth="52.0" onMouseClicked="#onRulesButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/open-book.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="46.0" prefWidth="13.0" />
+            <ImageView fitHeight="28.0" fitWidth="26.0" onMouseClicked="#onPlayButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/play-button.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

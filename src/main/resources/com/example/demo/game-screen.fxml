@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screen" onKeyTyped="#rotate" prefHeight="787.0" prefWidth="1290.0" style="-fx-background-color: #006C67;" stylesheets="@game-screen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GameController">
+   <children>
+      <VBox prefHeight="786.0" prefWidth="1289.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="1289.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="645.0" prefWidth="1289.0" style="-fx-background-color: #006C67;">
+               <children>
+                  <VBox fx:id="side" onKeyTyped="#rotate" prefHeight="638.0" prefWidth="268.0">
+                     <children>
+                        <ImageView fx:id="playButton" fitHeight="81.0" fitWidth="80.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/play-button.png" />
+                           </image>
+                        </ImageView>
+                     </children></VBox>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="640.0" prefWidth="802.0" style="-fx-background-color: #006C67;" vbarPolicy="NEVER">
+                     <content>
+                        <HBox fx:id="board" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="0.0" style="-fx-background-color: #006C67;" />
+                     </content></ScrollPane>
+                  <VBox prefHeight="642.0" prefWidth="218.0">
+                     <children>
+                        <VBox prefHeight="237.0" prefWidth="218.0">
+                           <children>
+                              <StackPane fx:id="preview" prefHeight="160.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fx:id="previewTile" fitHeight="160.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@tiles/start%20tile.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="29.0" />
+                                 </VBox.margin>
+                              </StackPane>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="42.0" fitWidth="53.0" onMouseClicked="#rotate2" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/rotation.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="42.0" prefWidth="7.0" />
+                                    <Text fx:id="tilesLeftText" fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiles Left: 72" wrappingWidth="110.21630859375">
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="29.0" top="29.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="optionSelection" prefHeight="362.0" prefWidth="198.0">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="79.0" prefWidth="1289.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

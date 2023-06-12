@@ -1,0 +1,71 @@
+F1, F1, R1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile1, 3, church1, 2, 36, 30, road1, 15, 42, 56, field1, 25, 13, 50
+F1, F1, R1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile1, 3, church1, 2, 36, 30, road1, 15, 42, 56, field1, 25, 13, 50
+F1, F1, F1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile2, 2, church1, 1, 36, 30, field1, 26, 56, 55
+F1, F1, F1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile2, 2, church1, 1, 36, 30, field1, 26, 56, 55
+F1, F1, F1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile2, 2, church1, 1, 36, 30, field1, 26, 56, 55
+F1, F1, F1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile2, 2, church1, 1, 36, 30, field1, 26, 56, 55
+C1, C1, C1, C1, c, c, c, c, c, c, c, c, false, true, tile3, 1, city1, 15, 47, 27
+C1, R1, F1, R1, c, c, 1, 2, 2, 2, 2, 1, false, false, tile4, 4, city1, 1, 38, 3, road1, 2, 34, 37, field2, 1, 34, 56, field1, 2, 24, 26
+C1, R1, F1, R1, c, c, 1, 2, 2, 2, 2, 1, false, false, tile4, 4, city1, 1, 38, 3, road1, 2, 34, 37, field2, 1, 34, 56, field1, 2, 24, 26
+C1, R1, F1, R1, c, c, 1, 2, 2, 2, 2, 1, false, false, tile4, 4, city1, 1, 38, 3, road1, 2, 34, 37, field2, 1, 34, 56, field1, 2, 24, 26
+C1, F1, F1, F1, c, c, 1, 1, 1, 1, 1, 1, false, false, tile5, 2, city1, 2, 40, 6, field1, 3, 31, 50
+C1, F1, F1, F1, c, c, 1, 1, 1, 1, 1, 1, false, false, tile5, 2, city1, 2, 40, 6, field1, 3, 31, 50
+C1, F1, F1, F1, c, c, 1, 1, 1, 1, 1, 1, false, false, tile5, 2, city1, 2, 40, 6, field1, 3, 31, 50
+C1, F1, F1, F1, c, c, 1, 1, 1, 1, 1, 1, false, false, tile5, 2, city1, 2, 40, 6, field1, 3, 31, 50
+C1, F1, F1, F1, c, c, 1, 1, 1, 1, 1, 1, false, false, tile5, 2, city1, 2, 40, 6, field1, 3, 31, 50
+F1, C1, F2, C1, 1, 1, c, c, 2, 2, c, c, false, true, tile6, 3, city1, 8, 34, 28, field2, 12, 34, 60, field1, 13, 24, 1
+F1, C1, F2, C1, 1, 1, c, c, 2, 2, c, c, false, true, tile6, 3, city1, 8, 34, 28, field2, 12, 34, 60, field1, 13, 24, 1
+F1, C1, F2, C1, 1, 1, c, c, 2, 2, c, c, false, false, tile7, 3, city1, 7, 39, 28, field2, 12, 34, 60, field1, 13, 24, 1
+F1, C1, F1, C2, 1, 1, c, c, 1, 1, c, c, false, false, tile8, 3, city1, 16, 65, 34, city2, 18, 10, 30, field1, 23, 34, 34
+F1, C1, F1, C2, 1, 1, c, c, 1, 1, c, c, false, false, tile8, 3, city1, 16, 65, 34, city2, 18, 10, 30, field1, 23, 34, 34
+F1, C1, F1, C2, 1, 1, c, c, 1, 1, c, c, false, false, tile8, 3, city1, 16, 65, 34, city2, 18, 10, 30, field1, 23, 34, 34
+C1, F1, F1, C2, c, c, 1, 1, 1, 1, c, c, false, false, tile9, 3, city2, 17, 10, 34, city1, 10, 38, 3, field1, 24, 53, 50
+C1, F1, F1, C2, c, c, 1, 1, 1, 1, c, c, false, false, tile9, 3, city2, 17, 10, 34, city1, 10, 38, 3, field1, 24, 53, 50
+C1, R1, R1, F1, c, c, 1, 2, 2, 1, 1, 1, false, false, tile10, 4, city1, 9, 24, 5, road1, 14, 47, 44, field1, 21, 16, 47, field2, 22, 58, 47
+C1, R1, R1, F1, c, c, 1, 2, 2, 1, 1, 1, false, false, tile10, 4, city1, 9, 24, 5, road1, 14, 47, 44, field1, 21, 16, 47, field2, 22, 58, 47
+C1, R1, R1, F1, c, c, 1, 2, 2, 1, 1, 1, false, false, tile10, 4, city1, 9, 24, 5, road1, 14, 47, 44, field1, 21, 16, 47, field2, 22, 58, 47
+C1, F1, R1, R1, c, c, 1, 1, 1, 2, 2, 1, false, false, tile11, 4, city1, 2, 40, 6, road1, 3, 36, 37, field1, 5, 58, 35, field2, 4, 16, 45
+C1, F1, R1, R1, c, c, 1, 1, 1, 2, 2, 1, false, false, tile11, 4, city1, 2, 40, 6, road1, 3, 36, 37, field1, 5, 58, 35, field2, 4, 16, 45
+C1, F1, R1, R1, c, c, 1, 1, 1, 2, 2, 1, false, false, tile11, 4, city1, 2, 40, 6, road1, 3, 36, 37, field1, 5, 58, 35, field2, 4, 16, 45
+C1, R1, R2, R3, c, c, 1, 2, 2, 3, 3, 1, false, false, tile12, 7, city1, 1, 38, 3, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 64, 37, field1, 16, 9, 24, field3, 14, 14, 57, field2, 15, 52, 57
+C1, R1, R2, R3, c, c, 1, 2, 2, 3, 3, 1, false, false, tile12, 7, city1, 1, 38, 3, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 64, 37, field1, 16, 9, 24, field3, 14, 14, 57, field2, 15, 52, 57
+C1, R1, R2, R3, c, c, 1, 2, 2, 3, 3, 1, false, false, tile12, 7, city1, 1, 38, 3, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 64, 37, field1, 16, 9, 24, field3, 14, 14, 57, field2, 15, 52, 57
+C1, C1, F1, F1, c, c, c, c, 1, 1, 1, 1, false, true, tile13, 2, city1, 4, 55, 23, field1, 10, 24, 50
+C1, C1, F1, F1, c, c, c, c, 1, 1, 1, 1, false, true, tile13, 2, city1, 4, 55, 23, field1, 10, 24, 50
+C1, C1, F1, F1, c, c, c, c, 1, 1, 1, 1, false, false, tile14, 2, city1, 3, 55, 23, field1, 10, 24, 50
+C1, C1, F1, F1, c, c, c, c, 1, 1, 1, 1, false, false, tile14, 2, city1, 3, 55, 23, field1, 10, 24, 50
+C1, C1, F1, F1, c, c, c, c, 1, 1, 1, 1, false, false, tile14, 2, city1, 3, 55, 23, field1, 10, 24, 50
+C1, R1, R1, C1, c, c, 1, 2, 2, 1, c, c, false, true, tile15, 4, city1, 6, 24, 8, road1, 6, 40, 32, field1, 11, 27, 56, field2, 30 , 62, 50
+C1, R1, R1, C1, c, c, 1, 2, 2, 1, c, c, false, true, tile15, 4, city1, 6, 24, 8, road1, 6, 40, 32, field1, 11, 27, 56, field2, 30 , 62, 50
+C1, R1, R1, C1, c, c, 1, 2, 2, 1, c, c, false, false, tile16, 4, city1, 5, 24, 8, road1, 6, 40, 32, field1, 11, 27, 56, field2, 30, 62, 50
+C1, R1, R1, C1, c, c, 1, 2, 2, 1, c, c, false, false, tile16, 4, city1, 5, 24, 8, road1, 6, 40, 32, field1, 11, 27, 56, field2, 30, 62, 50
+C1, R1, R1, C1, c, c, 1, 2, 2, 1, c, c, false, false, tile16, 4, city1, 5, 24, 8, road1, 6, 40, 32, field1, 11, 27, 56, field2, 30, 62, 50
+C1, C1, F1, C1, c, c, c, c, 1, 1, c, c, false, true, tile17, 2, city1, 12, 41, 29, field1, 27, 34, 65
+C1, C1, F1, C1, c, c, c, c, 1, 1, c, c, false, false, tile18, 2, city1, 11, 41, 29, field1, 27, 34, 65
+C1, C1, F1, C1, c, c, c, c, 1, 1, c, c, false, false, tile18, 2, city1, 11, 41, 29, field1, 27, 34, 65
+C1, C1, F1, C1, c, c, c, c, 1, 1, c, c, false, false, tile18, 2, city1, 11, 41, 29, field1, 27, 34, 65
+C1, C1, R1, C1, c, c, c, c, 1, 2, c, c, false, true, tile19, 4, city1, 14, 37, 14, road1, 1, 38, 63, field2, 28, 23, 65, field1, 29, 50, 65
+C1, C1, R1, C1, c, c, c, c, 1, 2, c, c, false, true, tile19, 4, city1, 14, 37, 14, road1, 1, 38, 63, field2, 28, 23, 65, field1, 29, 50, 65
+C1, C1, R1, C1, c, c, c, c, 1, 2, c, c, false, false, tile20, 4, city1, 13, 37, 14, road1, 1, 38, 63, field2, 28, 23, 65, field1, 29, 50, 65
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+R1, F1, R1, F1, 1, 2, 2, 2, 2, 1, 1, 1, false, false, tile21, 3, road1, 4, 52, 23, field1, 6, 16, 35, field2, 7, 55, 50
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, R1, R2, R3, 1, 1, 1, 2, 2, 3, 3, 1, false, false, tile23, 6, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 65, 34, field1, 16, 34, 12, field3, 14, 14, 57, field2, 15, 52, 57
+F1, R1, R2, R3, 1, 1, 1, 2, 2, 3, 3, 1, false, false, tile23, 6, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 65, 34, field1, 16, 34, 12, field3, 14, 14, 57, field2, 15, 52, 57
+F1, R1, R2, R3, 1, 1, 1, 2, 2, 3, 3, 1, false, false, tile23, 6, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 65, 34, field1, 16, 34, 12, field3, 14, 14, 57, field2, 15, 52, 57
+F1, R1, R2, R3, 1, 1, 1, 2, 2, 3, 3, 1, false, false, tile23, 6, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 65, 34, field1, 16, 34, 12, field3, 14, 14, 57, field2, 15, 52, 57
+R1, R2, R3, R4, 1, 2, 2, 3, 3, 4, 4, 1, false, false, tile24, 8, road1, 10, 42, 10, road4, 11, 3, 38, road3, 12, 34, 67, road2, 13, 67, 33, field4, 17, 13, 57, field1, 18, 13, 14, field2, 19, 56, 14, field3, 20, 56, 57
