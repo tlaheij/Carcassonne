@@ -137,7 +137,7 @@ public class Game {
         createTiles(data);
 
         // shuffling the tiles in a random order
-        Collections.shuffle(tiles);
+        // Collections.shuffle(tiles);
 
         // setting the prewview tile image view  to the top most tile
         previewTile.setImage(tiles.get(0).getImage());
