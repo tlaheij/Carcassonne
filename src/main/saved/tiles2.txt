@@ -1,0 +1,7 @@
+F1, F1, R1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile1, 3, church1, 2, 36, 30, road1, 15, 42, 56, field1, 25, 13, 50
+F1, F1, F1, F1, 1, 1, 1, 1, 1, 1, 1, 1, true, false, tile2, 2, church1, 1, 36, 30, field1, 26, 56, 55
+C1, R1, F1, R1, c, c, 1, 2, 2, 2, 2, 1, false, false, tile4, 4, city1, 1, 38, 3, road1, 2, 34, 37, field2, 1, 34, 56, field1, 2, 24, 26
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, F1, R1, R1, 1, 1, 1, 1, 1, 2, 2, 1, false, false, tile22, 3, road1, 5, 29, 24, field2, 8, 15, 50, field1, 9, 51, 10
+F1, R1, R2, R3, 1, 1, 1, 2, 2, 3, 3, 1, false, false, tile23, 6, road3, 7, 3, 37, road2, 8, 30, 64, road1, 9, 65, 34, field1, 16, 34, 12, field3, 14, 14, 57, field2, 15, 52, 57
+R1, R2, R3, R4, 1, 2, 2, 3, 3, 4, 4, 1, false, false, tile24, 8, road1, 10, 42, 10, road4, 11, 3, 38, road3, 12, 34, 67, road2, 13, 67, 33, field4, 17, 13, 57, field1, 18, 13, 14, field2, 19, 56, 14, field3, 20, 56, 57

@@ -7,6 +7,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
    <children>
@@ -34,7 +36,20 @@
                         <Image url="@images/play-button.png" />
                      </image>
                   </ImageView>
-                  <Pane prefHeight="39.0" prefWidth="600.0" />
+                  <Pane prefHeight="19.0" prefWidth="600.0" />
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0">
+                     <children>
+                        <HBox fx:id="savedButton" alignment="CENTER" onMouseClicked="#openSavedGame" prefHeight="28.0" prefWidth="147.0" style="-fx-background-color: #FFB100; -fx-background-radius: 10;">
+                           <children>
+                              <Text fill="#003844" strokeType="OUTSIDE" strokeWidth="0.0" text="Open Saved Game">
+                                 <font>
+                                    <Font name="Ubuntu Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
          </children>

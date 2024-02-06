@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #006C67;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.RulesScreen2">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="1174.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Accordion stylesheets="@rules-screen.css">
+              <panes>
+                <TitledPane fx:id="firstTitlesPane" animated="false" prefHeight="1194.0" prefWidth="560.0" text="Basic Game">
+                     <content>
+                        <VBox prefHeight="337.0" prefWidth="560.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                           <children>
+                              <VBox prefHeight="214.0" prefWidth="540.0" spacing="10.0" style="-fx-background-color: #006C67; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Components and Setup">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="100.0" prefWidth="240.0" spacing="3.0" style="-fx-background-color: #003844; -fx-background-radius: 10;">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                             <children>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="The 72 landscape tile show roads, cities and monasteries, in a field" wrappingWidth="226.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="13.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox prefHeight="100.0" prefWidth="200.0" spacing="7.0">
+                                                   <children>
+                                                      <ImageView fitHeight="61.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@tiles/tile5.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="61.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@tiles/tile22.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="61.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@tiles/tile2.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="3.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="City tile          Road tile         Monestary tile" wrappingWidth="226.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="145.0" prefWidth="305.0" spacing="15.0" style="-fx-background-color: #003844; -fx-background-radius: 10;">
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                             <children>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="The start tile is placed in the centre of the board and the remianing tiles are shuffled" wrappingWidth="226.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="13.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="Each player recieves 6 meeples in their colour. The colours are:" wrappingWidth="226.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="13.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox prefHeight="0.0" prefWidth="267.0" spacing="8.0">
+                                                   <children>
+                                                      <Text fill="#f9c22e" strokeType="OUTSIDE" strokeWidth="0.0" text="   YELLOW" wrappingWidth="64.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Bold" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="#e60026" strokeType="OUTSIDE" strokeWidth="0.0" text="RED" wrappingWidth="28.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Bold" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="#ffa6c9" strokeType="OUTSIDE" strokeWidth="0.0" text="PINK" wrappingWidth="32.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Bold" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="#6bd425" strokeType="OUTSIDE" strokeWidth="0.0" text="GREEN" wrappingWidth="44.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Bold" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="#084e98" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE" wrappingWidth="34.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Bold" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="#111111" strokeType="OUTSIDE" strokeWidth="0.0" text="GREEN  " wrappingWidth="51.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Bold" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="Each player starts at 0 points and aims to get as many as possible." wrappingWidth="226.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="13.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="382.0" prefWidth="540.0" spacing="10.0" style="-fx-background-color: #006C67; -fx-background-radius: 10;">
+                                 <padding>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </padding>
+                                 <children>
+                                    <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Overview">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="100.0" prefWidth="240.0" spacing="3.0" style="-fx-background-color: #003844; -fx-background-radius: 10;">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <children>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="In Carcassonne, players take turns placing tiles and expanding the landscape of roads, cities, monasteries and fields, one tile at a time. Players may place their meeples on the individual features of tiles as well (roads, cities monasteries, and fields), where they will become highwaymen, knights, monks, and farmers. Points are earned throughout the game, and the player with the highest score at the end is the winner!" wrappingWidth="391.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="13.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="216.0" prefWidth="526.0">
+                                       <children>
+                                          <VBox prefHeight="233.0" prefWidth="509.0" spacing="15.0" style="-fx-background-color: #003844; -fx-background-radius: 10;">
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                             <children>
+                                                <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="The first turn in Carcassonne always starts with the youngest player, then proceeds clockwise around the table. On your turn, you will perform each of the player actions in order (explained below). Once you've completed all three actions, the player on your left takes his turn." wrappingWidth="420.48687744140625">
+                                                   <font>
+                                                      <Font name="Ubuntu Regular" size="13.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox prefHeight="105.0" prefWidth="495.0">
+                                                   <children>
+                                                      <VBox prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: #679436; -fx-background-radius: 10 0 0 10;">
+                                                         <children>
+                                                            <Text fill="#003844" strokeType="OUTSIDE" strokeWidth="0.0" text="Placing a tile:You must draw exactly one landscape tile from a stack and place so that its edges match the edges of adjacent tiles (i.e., field to field,road to road, etc.)." wrappingWidth="129.6533203125">
+                                                               <font>
+                                                                  <Font name="Ubuntu Regular" size="11.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                      <Polygon fill="#679436" points="-50.0, 45.0, -26.0, -7.5, -50.0, -60.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+                                                      <Pane prefHeight="100.0" prefWidth="6.0" />
+                                                      <VBox prefHeight="93.0" prefWidth="140.0" style="-fx-background-color: #0087BD; -fx-background-radius: 10 0 0 10;">
+                                                         <children>
+                                                            <Text fill="#003844" strokeType="OUTSIDE" strokeWidth="0.0" text="Placing a meeple:You may place a meeple from your supply on a feature on the tile you just placed." wrappingWidth="129.6533203125">
+                                                               <font>
+                                                                  <Font name="Ubuntu Regular" size="11.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                      <Polygon fill="#0087bd" points="-50.0, 45.0, -29.0, -7.5, -50.0, -60.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+                                                      <Pane prefHeight="100.0" prefWidth="6.0" />
+                                                      <VBox prefHeight="100.0" prefWidth="140.0" style="-fx-background-color: #BA160C; -fx-background-radius: 10;">
+                                                         <children>
+                                                            <Text fill="#003844" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoring a feature: You must score any feature (road, city, or monastery) completed by your tile placement" wrappingWidth="129.6533203125">
+                                                               <font>
+                                                                  <Font name="Ubuntu Regular" size="11.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="382.0" prefWidth="540.0" spacing="10.0" style="-fx-background-color: #006C67; -fx-background-radius: 10;">
+                                 <padding>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </padding>
+                                 <children>
+                                    <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="The Roads">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="141.0" prefWidth="526.0">
+                                       <children>
+                                          <VBox prefHeight="132.0" prefWidth="490.0" spacing="3.0" style="-fx-background-color: #003844; -fx-background-radius: 10;">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <children>
+                                                <HBox prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #679436; -fx-background-radius: 5;">
+                                                   <children>
+                                                      <Text fill="#003844" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Placing a Tile" wrappingWidth="391.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Regular" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="470.0">
+                                                   <children>
+                                                      <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="You draw the shown tile with three road segments leading to a village. You must place it in such a way that the edges match the edges of the tiles already in play." wrappingWidth="196.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Regular" size="13.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Pane prefHeight="107.0" prefWidth="26.0" />
+                                                      <ImageView fitHeight="56.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@tiles/start%20tile.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="56.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="56.0" style="-fx-border-color: #FFB100;">
+                                                               <children>
+                                                                  <ImageView fitHeight="56.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@tiles/tile23.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                      <Pane prefHeight="122.0" prefWidth="13.0" />
+                                                      <Text fill="#ffebc6" strokeType="OUTSIDE" strokeWidth="0.0" text="You place the tile here. The road and fields continue the existing landscape." wrappingWidth="105.48687744140625">
+                                                         <font>
+                                                            <Font name="Ubuntu Regular" size="10.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                <TitledPane animated="false" text="Inns and Cathedrales" />
+                  <TitledPane fx:id="lastTitlesPane" animated="false" text="Goldmines" />
+              </panes>
+            </Accordion>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

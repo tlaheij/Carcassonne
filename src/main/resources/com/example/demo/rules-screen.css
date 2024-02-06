@@ -1,6 +1,18 @@
 .titled-pane .title {
     -fx-background-color: #FFB100;
-    -fx-background-radius: 20px;
+    -fx-background-radius: 0 0 0 0;
+    -fx-border-width: 10px;
+}
+
+#firstTitlesPane .title{
+    -fx-background-color: #FFB100;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-width: 10px;
+}
+
+#lastTitlesPane .title{
+    -fx-background-color: #FFB100;
+    -fx-background-radius: 0 0 10 10;
     -fx-border-width: 10px;
 }
 
@@ -10,7 +22,7 @@
 }
 
 .titled-pane .content{
-    -fx-background-color: #006C67;
+    -fx-background-color: #FFB100;
     -fx-border-width: 0px;
 }
 

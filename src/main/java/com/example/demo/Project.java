@@ -5,15 +5,29 @@ public class Project {
     private String ID;
     private int meepleX;
     private int meepleY;
-
     private Meeple meeple;
 
-    public Project(String type, String ID, int meepleX, int meepleY, Meeple meeple){
+    private Tile tile;
+
+    boolean shield;
+
+    public Project(String type, String ID, int meepleX, int meepleY, Meeple meeple, boolean shield, Tile tile){
         this.type = type;
         this.ID = ID;
         this.meepleX = meepleX;
         this.meepleY = meepleY;
         this.meeple = meeple;
+        this.shield = shield;
+        this.tile =tile;
+        this.meeple = null;
+    }
+
+    public Tile getTile() {
+        return tile;
+    }
+
+    public boolean isShield() {
+        return shield;
     }
 
     public Meeple getMeeple() {

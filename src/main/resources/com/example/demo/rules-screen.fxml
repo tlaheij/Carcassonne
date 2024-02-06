@@ -22,13 +22,13 @@
                   <Pane prefHeight="20.0" prefWidth="571.0" />
                   <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Rules" wrappingWidth="184.38401794433594">
                      <font>
-                        <Font name="Arial Bold" size="30.0" />
+                        <Font name="Ubuntu Bold" size="30.0" />
                      </font>
                   </Text>
                   <Pane prefHeight="25.0" prefWidth="571.0" />
                   <Accordion prefHeight="726.0" prefWidth="571.0" style="-fx-background-color: #006C67; -fx-border-width: 0px;" stylesheets="@rules-screen.css">
                     <panes>
-                      <TitledPane id="basicRules" animated="false" style="-fx-border-color: #006C67;" text="Basic" textFill="#003844">
+                      <TitledPane id="firstTitlesPane" animated="false" style="-fx-border-color: #006C67;" text="Basic" textFill="#003844">
                            <content>
                               <ScrollPane prefHeight="989.0" prefWidth="378.0">
                                  <content>
@@ -70,7 +70,7 @@
                               </ScrollPane>
                            </content>
                            <font>
-                              <Font size="16.0" />
+                              <Font name="Ubuntu Bold" size="16.0" />
                            </font>
                         </TitledPane>
                         <TitledPane id="basicRules" animated="false" layoutX="10.0" layoutY="10.0" style="-fx-border-color: #006C67;" text="Inns &amp; Cathedrals" textFill="#003844">
@@ -105,10 +105,10 @@
                               </ScrollPane>
                            </content>
                            <font>
-                              <Font size="16.0" />
+                              <Font name="Ubuntu Bold" size="16.0" />
                            </font>
                         </TitledPane>
-                        <TitledPane id="basicRules" animated="false" layoutX="10.0" layoutY="43.0" style="-fx-border-color: #006C67;" text="Gold Mines" textFill="#003844">
+                        <TitledPane id="lastTitlesPane" animated="false" layoutX="10.0" layoutY="43.0" style="-fx-border-color: #006C67;" text="Gold Mines" textFill="#003844">
                            <content>
                               <ScrollPane prefHeight="989.0" prefWidth="378.0">
                                  <content>
@@ -125,7 +125,7 @@
                               </ScrollPane>
                            </content>
                            <font>
-                              <Font size="16.0" />
+                              <Font name="Ubuntu Bold" size="16.0" />
                            </font>
                         </TitledPane>
                     </panes>

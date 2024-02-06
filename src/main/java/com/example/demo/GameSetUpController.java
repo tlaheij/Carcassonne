@@ -3,6 +3,8 @@ package com.example.demo;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -38,7 +40,23 @@ public class GameSetUpController {
     @FXML
     private HBox playerInp6;
 
+    @FXML
+    private TextField player1;
+    @FXML
+    private TextField player2;
+    @FXML
+    private TextField player3;
+    @FXML
+    private TextField player4;
+    @FXML
+    private TextField player5;
+    @FXML
+    private TextField player6;
+
+
     private final ArrayList<HBox> playerInputNames= new ArrayList<>();
+
+    private final ArrayList<TextField> playerNames= new ArrayList<>();
 
     @FXML
     private VBox setUp;
@@ -46,7 +64,15 @@ public class GameSetUpController {
     @FXML
     private AnchorPane stage;
 
+    @FXML
+    private CheckBox ICCheckbox;
+
+    @FXML
+    private CheckBox GCheckbox;
+
     public void onBackButtom(){
+        ICCheckbox.setSelected(false);
+
         Stage newStage = Variables.getHomeStage();
         Stage oldStage = Variables.getSetUpStage();
 
@@ -115,6 +141,16 @@ public class GameSetUpController {
 
     @FXML
     protected void onPlayButtonClick() throws IOException {
+        Variables.setInnCathedral(ICCheckbox.isSelected());
+        Variables.setGoldmines(GCheckbox.isSelected());
+
+        Variables.setNumPlayers(Integer.parseInt(numPlayers.getText()));
+
+        playerNames.addAll(Arrays.asList(player1, player2, player3, player4, player5, player6));
+
+        for(int i = 0; i < Variables.getPlayers().size(); i ++){
+            Variables.getPlayers().get(i).setName(playerNames.get(i).getText());
+        }
 
         Stage newStage = Variables.getGameStage();
         newStage.show();

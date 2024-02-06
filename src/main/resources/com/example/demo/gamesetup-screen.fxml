@@ -25,13 +25,13 @@
                            <children>
                               <Text fill="#ffb100" layoutX="10.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Set Up">
                                  <font>
-                                    <Font name="Arial Black" size="20.0" />
+                                    <Font name="Ubuntu Bold" size="20.0" />
                                  </font>
                               </Text>
                               <Pane prefHeight="10.0" prefWidth="288.0" />
                               <Text fill="#ffb100" layoutX="10.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expansions">
                                  <font>
-                                    <Font name="Arial Bold" size="16.0" />
+                                    <Font name="Ubuntu Bold" size="16.0" />
                                  </font>
                               </Text>
                               <HBox prefHeight="75.0" prefWidth="288.0">
@@ -39,15 +39,15 @@
                                     <Pane prefHeight="100.0" prefWidth="23.0" />
                                     <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="277.0">
                                        <children>
-                                          <CheckBox mnemonicParsing="false" text="Inns &amp; Cathedrales" textFill="#ffb100">
+                                          <CheckBox fx:id="ICCheckbox" mnemonicParsing="false" text="Inns &amp; Cathedrales" textFill="#ffb100">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </CheckBox>
                                           <Pane prefHeight="8.0" prefWidth="271.0" />
-                                          <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Goldmines" textFill="#ffb100">
+                                          <CheckBox fx:id="GCheckbox" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Goldmines" textFill="#ffb100">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </CheckBox>
                                           <Pane prefHeight="9.0" prefWidth="288.0" />
@@ -57,7 +57,7 @@
                               </HBox>
                               <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Players">
                                  <font>
-                                    <Font name="Arial Bold" size="16.0" />
+                                    <Font name="Ubuntu Bold" size="16.0" />
                                  </font>
                               </Text>
                               <Pane prefHeight="9.0" prefWidth="288.0" />
@@ -71,7 +71,7 @@
                                     <Pane prefHeight="63.0" prefWidth="8.0" />
                                     <Text fx:id="numPlayers" fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
                                        <font>
-                                          <Font name="Arial Bold" size="16.0" />
+                                          <Font name="Ubuntu Bold" size="16.0" />
                                        </font>
                                     </Text>
                                     <Pane prefHeight="63.0" prefWidth="8.0" />
@@ -95,11 +95,11 @@
                                        <children>
                                           <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </Text>
                                           <Pane prefHeight="4.0" prefWidth="169.0" />
-                                          <TextField style="-fx-background-color: #003844;">
+                                          <TextField fx:id="player1" style="-fx-background-color: #003844;">
                                              <font>
                                                 <Font name="Arial" size="13.0" />
                                              </font></TextField>
@@ -119,11 +119,11 @@
                                        <children>
                                           <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </Text>
                                           <Pane prefHeight="4.0" prefWidth="169.0" />
-                                          <TextField style="-fx-background-color: #003844;" />
+                                          <TextField fx:id="player2" style="-fx-background-color: #003844;" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -140,11 +140,11 @@
                                        <children>
                                           <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </Text>
                                           <Pane prefHeight="4.0" prefWidth="169.0" />
-                                          <TextField style="-fx-background-color: #003844;" />
+                                          <TextField fx:id="player3" style="-fx-background-color: #003844;" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -161,11 +161,11 @@
                                        <children>
                                           <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </Text>
                                           <Pane prefHeight="4.0" prefWidth="169.0" />
-                                          <TextField style="-fx-background-color: #003844;" />
+                                          <TextField fx:id="player4" style="-fx-background-color: #003844;" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -182,11 +182,11 @@
                                        <children>
                                           <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </Text>
                                           <Pane prefHeight="4.0" prefWidth="169.0" />
-                                          <TextField style="-fx-background-color: #003844;" />
+                                          <TextField fx:id="player5" style="-fx-background-color: #003844;" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -203,11 +203,11 @@
                                        <children>
                                           <Text fill="#ffb100" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name">
                                              <font>
-                                                <Font name="Arial Bold" size="13.0" />
+                                                <Font name="Ubuntu Bold" size="13.0" />
                                              </font>
                                           </Text>
                                           <Pane prefHeight="4.0" prefWidth="169.0" />
-                                          <TextField style="-fx-background-color: #003844;" />
+                                          <TextField fx:id="player6" style="-fx-background-color: #003844;" />
                                        </children>
                                     </VBox>
                                  </children>

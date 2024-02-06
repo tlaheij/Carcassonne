@@ -13,18 +13,33 @@ public class Meeple {
 
     private int xgrid;
     private int ygird;
+    private boolean big;
 
-    public Meeple(int x, int y, int xgrid, int ygird){
-        this.x = x;
-        this.y = y;
+    public Meeple(int x, int y, int xgrid, int ygird, String colour, boolean big){
+        if(big){
+            this.x = x - 6;
+            this.y = y - 6;
+            display.setFitHeight(18);
+            display.setFitWidth(18);
+        }
+        else{
+            this.x = x;
+            this.y = y;
+            display.setFitHeight(12);
+            display.setFitWidth(12);
+        }
+        this.big = big;
         // colindex
         this.xgrid = xgrid;
         // rowindex
         this.ygird= ygird;
-        Image image = new Image("file:./src/main/resources/com/example/demo/meeples/meeplepink.png");
+        Image image = new Image("file:./src/main/resources/com/example/demo/meeples/meeple" + colour + ".png");
         display.setImage(image);
-        display.setFitHeight(12);
-        display.setFitWidth(12);
+        this.colour = colour;
+    }
+
+    public boolean isBig() {
+        return big;
     }
 
     public int getXgrid() {
